@@ -22,10 +22,12 @@ https://docs.python.org/3/tutorial/index.html
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        # length of list nums
         l = len(nums)
         for i in range(l):
             n = nums[i]
             d = target - n
+            # if d in the remaining array
             if d in nums[i+1:]:
                 return [i, i+nums[i+1:].index(d)+1]
 
