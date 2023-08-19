@@ -40,7 +40,8 @@ class Solution2:
             if target-n in nums[i+1:]:
                 return [i, i+1+nums[i+1:].index(target-n)]
 
-class Solution:
+class Solution3:
+    # use dictionary
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         dict = {}
         for i, n in enumerate(nums):
