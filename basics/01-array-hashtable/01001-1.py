@@ -1,7 +1,22 @@
 ###
 leetcode 1. two sum
 
-python has List as array
+List in python as array
+
+numbers
+
+text(string): either inside single quotes or double quotes
+  if in single quotes, you have to escape ' like \'
+  if in double quotes, you have to escape " like \"
+  special characters such as \n have the same meaning in both
+  immutable once defined
+
+list
+  mutable
+  index access
+
+
+https://docs.python.org/3/tutorial/index.html
 
 ###
 
