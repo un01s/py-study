@@ -14,9 +14,12 @@ string: either inside single quotes or double quotes
 list
   mutable
   index access
-
+  index
 
 https://docs.python.org/3/tutorial/index.html
+
+comments in python is # for single line and the pair of three double-quotes
+for multilines
 
 """
 
