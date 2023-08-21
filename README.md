@@ -10,4 +10,4 @@ Step by step, from easy to hard.
 
 * [Leetcode in python](https://github.com/Garvit244/Leetcode)
 
-
+* [DSA](https://github.com/Shikha-code36/Data-Structures-and-Algorithm-Patterns)
