@@ -82,6 +82,43 @@ class Solution:
             return self.fib(n-1)+self.fib(n-2)
 ```
 
+or
+
+```python
+class Solution:
+    def fib(self, n: int) -> int:
+        if n <= 1:
+            return n
+        # create dp table
+        dp = [0]*(n+1)
+        # init dp
+        dp[0] = 0
+        dp[1] = 1
+        # traverse
+        for i in range(2, n+1):
+            dp[i] = dp[i-1] + dp[i-2]
+        #
+        return dp[n]
+```
+
+or, simpler
+
+```python
+class Solution:
+    def fib(self, n: int) -> int:
+        if n < 2:
+            return n
+        # simple dp table
+        dp = [0, 1]
+        # traverse
+        for _ in range(2, n+1):
+            curr = dp[0] + dp[1]
+            dp[0] = dp[1]
+            dp[1] = curr
+        # answer
+        return dp[1]
+```
+
 ## Go
 
 ```Go
