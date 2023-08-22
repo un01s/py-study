@@ -93,3 +93,19 @@ func fib(n int) int {
 }
 ```
 
+## Rust
+
+```rust
+impl Solution {
+    pub fn fib(n: i32) -> i32 {
+        if n < 2 {
+            n
+        } else {
+            (2..n).fold((1, 1), |(pp, p), _| (p, pp+p)).1
+        }
+    }
+}
+```
+
+
+
