@@ -1,6 +1,6 @@
-# fibonacci number
+# [leetcode 509. fibonacci number](https://leetcode.com/problems/fibonacci-number/)
 
-The fibonacci number is classic recursion. It is also a simple DP.
+The fibonacci number is a classic recursion. It is also a simple DP.
 
 ```C++
 // space complexity O(n)
