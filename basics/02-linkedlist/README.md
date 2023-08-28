@@ -4,10 +4,8 @@
 
 | Leetcode | Solution |
 | -------- | -------- |
-| [21: merge two sorted lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [02-21](https://github.com/un01s/py-study/blob/main/basics/02-linkedlist/02-21.cpp) |
-| [86: partition list](https://leetcode.com/problems/partition-list/) | [02-86](https://github.com/un01s/py-study/blob/main/basics/02-linkedlist/02-86.cpp) |
-
-## Recursive
+| [21: merge two sorted lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [0201-21](https://github.com/un01s/py-study/blob/main/basics/02-linkedlist/0201-21.cpp) |
+| [86: partition list](https://leetcode.com/problems/partition-list/) | [0202-86](https://github.com/un01s/py-study/blob/main/basics/02-linkedlist/0202-86.cpp) |
 
 ### 21. merge two sorted lists
 
