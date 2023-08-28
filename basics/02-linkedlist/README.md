@@ -16,7 +16,8 @@ This is not a fair comparison because both python and Go use the recursive while
 | language | runtime | memory |
 | -------- | ------- | ------ |
 | Go | 0ms | 2.6MB |
-| C++ | 11ms | 14.9MB |
+| C++ (recursion) | 4ms | 14.8MB |
+| C++ (two-pointer) | 11ms | 14.9MB |
 | Python3 | 43ms | 16.3MB |
 
 
