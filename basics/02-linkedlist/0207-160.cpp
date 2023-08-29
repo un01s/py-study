@@ -4,6 +4,11 @@
  *
  */
 
+#include <iostream>
+#include <unordered_map>
+
+using namespace std;
+
 struct ListNode {
     int val;
     ListNode *next;
@@ -32,3 +37,26 @@ public:
         return p1; // the intersection
     }
 };
+
+class Solution2 {
+public:
+    ListNode* getIntersectionNode(ListNode* headA, ListNode* headB) {
+        ListNode* p1 = headA;
+        ListNode* p2 = headB;
+        unordered_map<ListNode*, bool> m;
+        while (p1 != nullptr) {
+            m[p1] = true;
+            p1 = p1->next;
+        }
+        while (p2 != nullptr) {
+            if (m[p2] == true) {
+                return p2;
+            }
+        }
+        return nullptr;
+    }
+};
+
+int main() {
+    return 0;
+}
