@@ -2,7 +2,7 @@
 
 ## traversal
 
-```
+```C++
 class Solution {
 public:
     int res = INT_MIN;
