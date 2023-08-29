@@ -2,6 +2,12 @@
  * leetcode 142
  * detect cycle: linked list cycle II
  *
+ * initially both pointers are set to the head of the linked list
+ * the fast pointer moves twice as fast as the slow pointer
+ * if there is a cycle, then eventually the fast pointer will catch up with 
+ * the slow pointer
+ * if there is no cycle, the fast pointer will reach the end of the list
+ *
  */
 
 struct ListNode {
