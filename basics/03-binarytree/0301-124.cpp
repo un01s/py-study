@@ -1,8 +1,6 @@
-# binary tree
-
-## traversal
-
-```C++
+/*
+ * leetcode 124
+ */
 class Solution {
 public:
     int res = INT_MIN;
@@ -22,5 +20,4 @@ public:
         return res;
     }
 };
-```
 
