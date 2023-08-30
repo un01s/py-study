@@ -2,6 +2,13 @@
 
 ## python one-line solution
 
+```python
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        nums[:] = [num for num in nums if num != val]
+        return len(nums)
+```
+
 Python's slice notation: the key point is that the ```:stop``` value represents the first value that is not in the selected slice.
 
 Both ```start``` and ```stop``` could be a negative number, which means it counts from the end of the array instead of the beginning. 
@@ -24,9 +31,3 @@ Here is another ASCII art to show how slices work:
   -6  -5  -4  -3  -2  -1
 ```
 
-```python
-class Solution:
-    def removeElement(self, nums: List[int], val: int) -> int:
-        nums[:] = [num for num in nums if num != val]
-        return len(nums)
-```
