@@ -303,7 +303,46 @@ Here is another ASCII art to show how slices work:
   -6  -5  -4  -3  -2  -1
 ```
 
+## sliding-window for array
 
+### [76 minimum window substring](https://leetcode.com/problems/minimum-window-substring/)
+
+```C++
+class Solution {
+public:
+    string minWindow(string s, string t) {
+        int left = 0, right = 0;
+        unordered_map<char, int> need, window;
+        for (int i = 0; i < t.size(); i++) {
+            need[t[i]]++;
+        }  
+       
+        int valid = 0;
+        int len = INT_MAX;
+        while (right < s.size()) {
+            char c = s[right];
+            right++;
+            if (need.count(c)) {
+                window[c]++;
+                if (window[c] == need[c]) valid++;
+            }
+            while (valid == need.size()) {
+                if (right-left < len) {
+                    start = left;
+                    len = right-left;
+                }
+                char d = s[left];
+                left++;
+                if (need.count(d)) {
+                    if (window[d] == need[d]) valid--;
+                    window[d]--;
+                }
+            }
+        }
+        return len == INT_MAX ? "" : s.substr(start, len);
+    }
+};
+```
 
 
 
