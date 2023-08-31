@@ -362,5 +362,19 @@ int binarySearch(vector<int>& nums, int target) {
 }
 ```
 
+## [344 reverse string]()
 
+Note the double slash operator in ```len(s)//2```. This is the floor division, after the division the result is rounded to the nearest integer. So ```12//5``` is ```2```. 
+
+```python
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        for i in range(len(s)//2):
+            tmp = s[len(s)-i-1]
+            s[len(s)-i-1] = s[i]
+            s[i] = tmp
+```
 
