@@ -362,7 +362,7 @@ int binarySearch(vector<int>& nums, int target) {
 }
 ```
 
-## [344 reverse string]()
+## [344 reverse string](https://leetcode.com/problems/reverse-string/)
 
 Note the double slash operator in ```len(s)//2```. This is the floor division, after the division the result is rounded to the nearest integer. So ```12//5``` is ```2```. 
 
