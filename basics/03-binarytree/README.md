@@ -82,4 +82,51 @@ So pre-order, in-order, and post-order traversal is really about the time to pro
 | in-order | first left-subtree, handle the node, then right-subtree |
 | post-order | left-subtree first,and right-subtree, then handle the node |
 
+## [104 maximum depth]()
 
+```C++
+// divide and conquer
+// get the subtree
+class Solution {
+public:
+    // recursive DFS
+    int maxDepth(TreeNode* root) {
+        // base case
+        if (root == nullptr) return 0;
+
+        int left = maxDepth(root->left);
+        int right = maxDepth(root->right);
+
+        return max(left, right)+1;
+    }
+};
+```
+
+Another way to traverse the tree:
+```C++
+// back-tracking way
+class Solution {
+public:
+    int depth = 0;
+    int res = 0;
+    void traverse(TreeNode* root) {
+        if (root == nullptr) return;
+        // pre-order
+        depth++;
+        if (root->left == nullptr && root->right == nullptr) {
+            res = max(res, depth);
+        }
+        traverse(root->left);
+        traverse(root->right);
+        // post-order
+        depth--;
+    }
+    int maxDepth(TreeNode* root) {
+        traverse(root);
+        return res;
+    }
+};
+```
+
+
+```
