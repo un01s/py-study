@@ -1,6 +1,8 @@
 /*
  * leetcode 35
- *
+ * loop invariant
+ * to use the loop, identify what is loop invariant?
+ * 
  */
 
 // time O(n)
@@ -100,3 +102,29 @@ Output = 4
  
  *
  */
+
+// another way to use binary search
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) {
+        int i = 0, j = nums.size();
+        if (target > nums[j-1]) return j;
+        if (target < nums[i]) return i;
+        // use [i, j), i is included in the range while j is not
+        // so i < j instead of i <= j
+        while (i < j) {
+            int m = i + (j-i)/2;
+            //cout << "a:" << i << "-" << m << "-" <<j << endl;
+            if (nums[m] == target) {
+                return m;
+            } else if (nums[m] > target) {
+                j = m;
+            } else {
+                i = m+1;
+            }
+            //cout << "b:" << i << "-" << m << "-" <<j << endl;
+        }
+        return i;    
+    }
+};
+
