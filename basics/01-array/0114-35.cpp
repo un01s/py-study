@@ -25,6 +25,16 @@ public:
 // to loop over the same code, it is important to maintain this invariant
 // or the code has a bug.
 // 
+// in the following code:
+//
+// the range [i, j]
+// while (i <= j)
+// then i = mid+1;
+// then j = m-1; 
+// all these are to maintain the invariant in the loop.
+// 
+// both i and j work like double-pointer, left and right
+// 
 // time O(logN)
 // space O(1)
 class Solution {
