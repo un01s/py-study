@@ -6,6 +6,10 @@ Step by step, from easy to hard.
 
 ## reference
 
+* [c++ interview](https://github.com/huihut/interview)
+
+* [patterns](https://github.com/greyireland/algorithm-pattern)
+
 * [Leetcode in python](https://github.com/YuriSpiridonov/LeetCode)
 
 * [Leetcode in python](https://github.com/Garvit244/Leetcode)
