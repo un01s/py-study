@@ -1,4 +1,16 @@
-# loop invariant
+# loop invariant, array, linked list, and binary tree
+
+## data structures
+
+One data type has two properties: the storage-space specifics and its access approach. It ties more closely to the hardware. Data structures abstract this one-level up. 
+
+* Array: consecutive, same data type, linear access with its index (starting from 0)
+
+* Linked list: a list of nodes, each node has its value (or data) and a pointer to the next node. The last node has a null pointer.
+
+* binary tree: a tree of nodes, each node may have two children nodes at most.
+
+## loop invariant  
 
 In computer science, a loop invariant is a property of a program loop that is true before (and after) each iteration.
 
