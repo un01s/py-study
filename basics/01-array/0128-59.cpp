@@ -2,7 +2,8 @@
  * leetcode 59
  *
  * maintain the range as [left, right) always
- *
+ * fully utilize the ending value of last for-loop (one edge)
+ * 
  */
 
 class Solution {
