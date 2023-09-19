@@ -11,6 +11,8 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
+
+// add a dummy head to make the swap easier
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {
@@ -28,6 +30,20 @@ public:
             cur = cur->next->next; // move forward two nodes
         }
         return dummyHead->next;
+    }
+};
+
+// reursion
+class Solution {
+public:
+    ListNode* swapPairs(ListNode* head) {
+        if (head == nullptr || head->next == nullptr) return head;
+
+        ListNode* next = head->next;
+        head->next = swapPairs(next->next);
+        next->next = head; 
+        
+        return next;
     }
 };
 
