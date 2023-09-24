@@ -27,7 +27,7 @@ So the big difference between array and linked list is as follows:
 
 * linked list has the next pointer for operations on its nodes that are physically or logically distributed in a memory space. The pointer is the connection.
 
-## stack and queue
+## stack and queue (abstract data structures)
 
 | ops | stack | queue |
 | --- | ----- | ----- |
@@ -36,6 +36,8 @@ So the big difference between array and linked list is as follows:
 | | Last In First Out | First In First Out (FIFO) |
 
 Both stack and queue are limited to its capacity. It could overflow after keeping pushing into them. Another issue is the opposite, underflow where either the stack or queue is empty.
+
+There are different implementations of both stack and queue.
 
 ## strings
 
@@ -60,6 +62,9 @@ Ideally, the hash function will assign each key to a unique bucket, but most has
 | Python | dict |
 | Ruby | Hash |
 | Rust | HashMap, HashSet |
+
+The idea is to use hash table for quick insertion and search.
+
  
 ## Reference
 
