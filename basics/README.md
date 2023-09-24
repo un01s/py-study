@@ -65,7 +65,14 @@ Ideally, the hash function will assign each key to a unique bucket, but most has
 
 The idea is to use hash table for quick insertion and search.
 
- 
+## linear structure and tree
+
+| linear structure | tree |
+| ---------------- | ---- |
+| first element: no previous | root node: no parent, only one |
+| last element: no next | leaf node: no child, may be more |
+| middle elements: one previous and one next | middle nodes: one parent and one or more children |
+
 ## Reference
 
 * [DSA guide](https://tsejx.github.io/data-structure-and-algorithms-guidebook/)
