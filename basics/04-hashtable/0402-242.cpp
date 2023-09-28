@@ -4,6 +4,7 @@
  *
  */
 
+// use array as a hash table
 class Solution {
 public:
     bool isAnagram(string s, string t) {
@@ -22,4 +23,26 @@ public:
         return true;
     }
 };
+
+// use the unordered_map as the hash table
+class Solution2 {
+public:
+    bool isAnagram(string s, string t) {
+        if (s.size() != t.size()) return false;
+
+        unordered_map<char, int> mp;
+
+        for (int i = 0; i < s.size(); i++) {
+            mp[s[i]]++;
+        }    
+        for (int i = 0; i < t.size(); i++) {
+            mp[t[i]]--;
+        }
+        for (auto x : mp) {
+            if (x.second != 0) return false;
+        }
+        return true;
+    }
+};
+
 
