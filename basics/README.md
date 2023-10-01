@@ -16,10 +16,10 @@ The way to access and modify any element in a data structure such as array, link
 
 | op | array | linked list |
 | -- | ----- | ----------- |
-| read/write | index | traverse with next pointer |
-| search | index |  traverse |
-| insert | dynamic change | modify the pointer |
-| delete | dynamic change | modify the pointer |
+| read/write | index O(1) | traverse with next pointer |
+| search | index O(n) |  traverse |
+| insert | dynamic change O(n) | modify the pointer |
+| delete | dynamic change O(n) | modify the pointer |
 
 So the big difference between array and linked list is as follows:
 
