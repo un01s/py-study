@@ -77,3 +77,5 @@ The idea is to use hash table for quick insertion and search.
 
 * [DSA guide](https://tsejx.github.io/data-structure-and-algorithms-guidebook/)
 
+* [algodeck](https://github.com/teivah/algodeck/)
+
