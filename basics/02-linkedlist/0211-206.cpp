@@ -1,6 +1,6 @@
 /*
  * leetcode 206
- *
+ * reverse a singly linked list
  */
 
 // recursive, the head node has to be handled separately
@@ -19,4 +19,19 @@ public:
     }
 };
 
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode* temp;
+        ListNode* cur = head;
+        ListNode* pre = nullptr;
+        while(cur) {
+            temp = cur->next;
+            cur->next = pre;
+            pre = cur;
+            cur = temp;
+        }
+        return pre;
+    }
+};
 
