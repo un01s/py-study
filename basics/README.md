@@ -16,10 +16,10 @@ The way to access and modify any element in a data structure such as array, link
 
 | op | array | linked list |
 | -- | ----- | ----------- |
-| read/write | index O(1) | traverse with next pointer |
-| search | index O(n) |  traverse |
-| insert | dynamic change O(n) | modify the pointer |
-| delete | dynamic change O(n) | modify the pointer |
+| read/write | index O(1) | traverse with next pointer O(n) |
+| search | index O(n) |  traverse O(n) |
+| insert | dynamic change O(n) | modify the pointer O(1) |
+| delete | dynamic change O(n) | modify the pointer O(1) |
 
 So the big difference between array and linked list is as follows:
 
@@ -31,8 +31,8 @@ So the big difference between array and linked list is as follows:
 
 | ops | stack | queue |
 | --- | ----- | ----- |
-| insert | push to its top | push to its tail |
-| delete | pop from its top | pop from its head |
+| insert | push to its top O(1) | push to its tail O(1) |
+| delete | pop from its top O(1) | pop from its head O(1) |
 | | Last In First Out | First In First Out (FIFO) |
 
 Both stack and queue are limited to its capacity. It could overflow after keeping pushing into them. Another issue is the opposite, underflow where either the stack or queue is empty.
